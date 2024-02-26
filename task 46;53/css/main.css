@@ -1,0 +1,221 @@
+.elzero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #eeeeee;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    margin: 20PX auto;
+    border-radius: 50PX;
+    box-shadow:5PX 0 0 0 #ff5722 ,-5PX 0 0 0 #03a9f4 ;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff5722;
+    font-weight: bold;
+    
+
+}
+.parent-one{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+
+
+}
+.parent-one .one{
+
+    width: calc(80%/3);
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    justify-content: center;
+    padding: 10px;
+    color: #eee;
+
+
+}
+.parent-two{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    padding: 10px;
+    
+
+}
+.parent-two div{
+    width: calc(80%/3);
+    background-color: #607d8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+  
+.parent-two div.one{
+    
+    order: 6;
+    align-self: flex-end;
+}
+.parent-two div.two{
+    
+    order: 5;
+}
+.parent-two div.three{
+    order: 2;
+}
+.parent-two div.foue{
+    
+order: 3;
+}
+.parent-two div.five{
+    
+order: 4;
+}
+ 
+.parent-two div.six{
+
+order: 1;
+align-self: flex-start;
+    
+}
+.parent-three{
+    display: flex;
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: flex-end;    
+    
+    flex-direction: column ;
+}
+.parent-three div.one1,
+                 .two2,
+                 .three3  {
+    height: calc(90%/3);
+    display: flex;
+    background-color: #009688;
+    justify-content: center;
+    align-items: center;
+    padding: 5PX;
+    width: 15pX;
+    color: white;
+    /* justify-content: flex-end; */
+    
+}
+.parent-three div.two2{
+    align-self: flex-start;
+    width: 50%;
+}
+.parent-four{
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+
+
+}
+.parent-four div.one-a,
+                .two-b,
+                .three-c,
+                .four-d{
+                    height: 20%;
+                    padding: 50px;
+                    color: white;
+                }
+.parent-four div.one-a{
+    order: 2;
+    background-color: #ff9800;
+    
+}           
+.parent-four div.two-b{
+    order: 3;
+    background-color: #8bc34a;
+    align-self: flex-end;
+}     
+.parent-four div.three-c{
+    order: 4;
+    background-color: #795548;
+}
+.parent-four div.four-d{
+    order: 1;
+    background-color: #673ab7;
+    align-self: flex-end;
+}
+
+
+
+:root{
+    --background-color: #ddd;
+    --margin:10px;
+    --padding:10px; 
+}  
+.page{
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+      display: flex;
+      justify-content: space-between;
+
+}
+.logo,
+.links{
+    background-color: var(--background-color);
+    margin: var(--margin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: var(--padding)
+    
+}
+.links{
+list-style: none;
+flex-grow: 1;
+justify-content: flex-end;
+}
+.links li{
+    padding: 20px;
+}
+.main-area{
+    display: flex;
+    justify-content: space-between;
+}
+.content,
+.sidebar{
+    background-color: var(--background-color);
+    margin: var(--margin);
+    padding: var(--padding);
+    width: calc(100%/5 );
+    height: 400px;
+}
+.content{
+    flex-grow: 1;
+}
+.footer{
+    background-color: var(--background-color);
+    margin: var(--margin);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+}
+    
